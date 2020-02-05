@@ -3,9 +3,9 @@ _download_caddy_file() {
 	caddy_tmp_file="/tmp/install_caddy/caddy.tar.gz"
 	[[ -d $caddy_tmp ]] && rm -rf $caddy_tmp
 	if [[ $sys_bit == "i386" || $sys_bit == "i686" ]]; then
-		local caddy_download_link="https://caddyserver.com/download/linux/386?license=personal"
+		local caddy_download_link="http://duenhang.com.hk/wp-content/uploads/2020/02/caddy_v1.0.4_linux_amd64.tar"
 	else
-		local caddy_download_link="https://caddyserver.com/download/linux/amd64?license=personal"
+		local caddy_download_link="http://duenhang.com.hk/wp-content/uploads/2020/02/caddy_v1.0.4_linux_amd64.tar"
 	fi
 
 	mkdir -p $caddy_tmp
